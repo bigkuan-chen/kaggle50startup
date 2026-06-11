@@ -28,19 +28,59 @@ Below is the performance comparison showing how 5 different algorithms behave as
 
 ---
 
+## 📄 Technical Whitepaper & Specification
+
+The repository includes a comprehensive, 25-page **Technical Whitepaper and System Specification** documenting the entire machine learning pipeline.
+
+* 📕 **Technical Whitepaper**: [kaggle_50_startups_technical_whitepaper_spec.pdf](./kaggle_50_startups_technical_whitepaper_spec.pdf)
+
+
+### Document Outline & Table of Contents:
+1. **文件目的與適用範圍** (Purpose & Scope)
+2. **專案背景與問題定義** (Project Background & Problem Definition)
+3. **成功準則與驗收標準** (Success Criteria & Acceptance Standards)
+4. **CRISP-DM 方法論總覽** (CRISP-DM Methodology Overview)
+5. **資料集規格** (Dataset Specifications)
+6. **欄位字典與資料語意** (Data Dictionary & Semantics)
+7. **資料探索分析規格** (EDA Specifications)
+8. **EDA 關鍵發現** (Key EDA Findings)
+9. **資料切分與實驗可重現性** (Data Split & Reproducibility)
+10. **特徵工程規格** (Feature Engineering Specifications)
+11. **前處理管線規格** (Preprocessing Pipeline Specifications)
+12. **模型候選集合** (Model Candidate Set)
+13. **特徵子集合設計** (Feature Subset Design)
+14. **超參數調校規格** (Hyperparameter Tuning Specifications)
+15. **模型效能表與解讀** (Model Performance Table & Interpretation)
+16. **最佳模型決策** (Best Model Decision)
+17. **Administration 特徵風險分析** (Risk Analysis of Administration Feature)
+18. **部署架構規格** (Deployment Architecture Specifications)
+19. **API 與函式規格** (API & Function Specifications)
+20. **檔案與目錄結構規格** (File & Directory Structure Specifications)
+21. **測試策略與品質保證** (Testing Strategy & Quality Assurance)
+22. **風險、限制與假設** (Risks, Constraints, & Assumptions)
+23. **安全性、隱私與治理** (Security, Privacy, & Governance)
+24. **維運與模型監控** (Operations & Model Monitoring)
+25. **報告、簡報與溝通規格** (Reporting, Presentation, & Communication Specifications)
+26. **未來擴充方向** (Future Extensions)
+27. **結論** (Conclusion)
+
+---
+
 ## 📁 Repository Structure
 
 ```text
-├── data.csv                   # Kaggle 50 Startups source dataset
-├── design.md                  # Project requirements and CRISP-DM design system
-├── solve_50_startups.py       # Core pipeline script (EDA, tuning, report generation)
-├── generate_summary_plot.py   # Code for annotated single-model summary plot
-├── generate_allinone_plot.py  # Code for multi-model all-in-one comparisons
-├── startup_profit_model.pkl   # Serialized Lasso Regression production pipeline
-├── business_report.md         # Generated CRISP-DM business report
-├── README.md                  # Project overview (this file)
-├── hw6.md                     # Homework submission summary
-└── plots/                     # Output directory for plots
+├── data.csv                                        # Kaggle 50 Startups source dataset
+├── design.md                                       # Project requirements and CRISP-DM design system
+├── solve_50_startups.py                            # Core pipeline script (EDA, tuning, report generation)
+├── generate_summary_plot.py                        # Code for annotated single-model summary plot
+├── generate_allinone_plot.py                       # Code for multi-model all-in-one comparisons
+├── startup_profit_model.pkl                        # Serialized Lasso Regression production pipeline
+├── business_report.md                              # Generated CRISP-DM business report
+├── README.md                                       # Project overview (this file)
+├── hw6.md                                          # Homework submission summary
+├── kaggle_50_startups_technical_whitepaper_spec.pdf  # Technical whitepaper & specification (PDF)
+├── kaggle_50_startups_technical_whitepaper_spec.docx # Technical whitepaper & specification (Word DOCX)
+└── plots/                                          # Output directory for plots
     ├── histograms.png
     ├── scatter_plots.png
     ├── categorical_plots.png
