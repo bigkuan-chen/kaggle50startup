@@ -2,6 +2,8 @@
 
 This repository contains a complete, robust machine learning pipeline for predicting startup profitability based on budget allocations across R&D, Administration, and Marketing expenditures, alongside geographical location (State).
 
+🎥 **Video Introduction**: [Kaggle 50 Startups Profit Prediction Video Overview](https://drive.google.com/file/d/1h4sVaSM_jseeHHVlCHuCg-b3hizMkT49/view?usp=sharing)
+
 ---
 
 ## 🚀 Key Results & Insights
