@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" modified="2026-06-11T05:00:00.000Z" agent="5.0" version="20.0.0">
+  <diagram id="workflow" name="CRISP-DM Workflow">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Step 1: Business Understanding -->
+        <mxCell id="step1" value="1. Business Understanding&#xa;&#xa;Define Target: Profit&#xa;Optimize Budget Scale" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#ebf5fb;strokeColor=#2e86c1;strokeWidth=2;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Step 2: Data Understanding -->
+        <mxCell id="step2" value="2. Data Understanding&#xa;&#xa;Check missing/duplicates&#xa;Pearson Correlation&#xa;EDA visual charts" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#e8f8f5;strokeColor=#16a085;strokeWidth=2;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Step 3: Data Preparation -->
+        <mxCell id="step3" value="3. Data Preparation&#xa;&#xa;StandardScaler&#xa;OneHotEncoder&#xa;FeatureEngineer Ratios" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#fef9e7;strokeColor=#d4ac0d;strokeWidth=2;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="460" y="100" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Step 4: Modeling -->
+        <mxCell id="step4" value="4. Modeling&#xa;&#xa;5-fold Cross Validation&#xa;GridSearchCV Tuning&#xa;5 distinct algorithms" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#ebf5fb;strokeColor=#2980b9;strokeWidth=2;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="670" y="100" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Step 5: Evaluation -->
+        <mxCell id="step5" value="5. Evaluation&#xa;&#xa;Compare RMSE &amp; R²&#xa;Verify Admin noise&#xa;Select best Lasso model" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#fdf2e9;strokeColor=#d35400;strokeWidth=2;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="880" y="100" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Step 6: Deployment -->
+        <mxCell id="step6" value="6. Deployment&#xa;&#xa;Export pickle model&#xa;predict_profit() function&#xa;Business Report" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#f5eef8;strokeColor=#8e44ad;strokeWidth=2;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="100" width="160" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;strokeWidth=2;strokeColor=#7f8c8d;" edge="1" parent="1" source="step1" target="step2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;strokeWidth=2;strokeColor=#7f8c8d;" edge="1" parent="1" source="step2" target="step3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;strokeWidth=2;strokeColor=#7f8c8d;" edge="1" parent="1" source="step3" target="step4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;strokeWidth=2;strokeColor=#7f8c8d;" edge="1" parent="1" source="step4" target="step5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;strokeWidth=2;strokeColor=#7f8c8d;" edge="1" parent="1" source="step5" target="step6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
